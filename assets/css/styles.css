@@ -6,6 +6,8 @@
    --font-main: 'Poppins', sans-serif;
 
    --color-header: #e63946;
+   --color-header-menu-trigger: #d13340;
+   --color-header-menu-trigger-hover: #ab2833;
    --color-main: #1d3557;
    --color-buttons: #f1faee;
    --color-buttons-hover: #c6cbc5;
@@ -81,6 +83,44 @@
 .menu-nav-header .menu-trigger i {
    font-size: 2em;
    cursor: pointer;
+}
+
+/* Menu Trigger */
+
+.menu-nav-header ul {
+   z-index: 999;
+   top: 87px;
+   right: 0px;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--color-header-menu-trigger);
+   border-radius: 0 0 10px 10px;
+   transform: rotateX(90deg);
+   transform-origin: top;
+   transition: ease-in-out .2s;
+}
+
+.menu-nav-header ul li {
+   width: 200px;
+}
+
+.menu-nav-header ul li a {
+   display: block;
+   padding: 1em;
+   transition: all .2s;
+}
+
+.menu-nav-header ul li a:hover {
+   background-color: var(--color-header-menu-trigger-hover);
+}
+
+.menu-nav-header ul li:last-child a {
+   border-radius: 0 0 10px 10px;
+}
+
+.menu-nav-header ul.open {
+   transform: rotateX(0deg);
 }
 
 /* Main */
