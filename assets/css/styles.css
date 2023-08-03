@@ -31,6 +31,10 @@
    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
+#header-top .menu-nav-header {
+   position: relative;
+}
+
 #header-top .menu-nav-header,
 #container .repositories {
    max-width: 1200px;
@@ -38,33 +42,40 @@
    padding: 1em;
 }
 
-#header-top .menu-nav-header ul {
+#header-top .menu-nav-header {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-#header-top .menu-nav-header ul li,
-#header-top .menu-nav-header ul li a,
-#header-top .menu-nav-header ul li i {
+#header-top .menu-nav-header h1,
+#header-top .menu-nav-header a,
+#header-top .menu-nav-header i {
    color: var(--light-grey);
+   transition: all .2s;
 }
 
-.menu-nav-header .github-link-header a {
+.menu-nav-header .github-link-header {
    font-size: 1.5em;
    display: flex;
    align-items: center;
    gap: .5em;   
 }
 
-.menu-nav-header .github-link-header a i {
+#header-top .menu-nav-header .github-link-header:hover,
+#header-top .menu-nav-header .github-link-header:hover i {
+   color: var(--color-buttons-hover);
+}
+
+.menu-nav-header .github-link-header i {
    font-size: 1.5em;
 }
 
-.menu-nav-header .main-tittle {
+.menu-nav-header h1 {
    font-size: 2em;
    text-transform: uppercase;
    font-weight: 600;
+   margin: auto;
 }
 
 .menu-nav-header .menu-trigger i {
@@ -85,7 +96,7 @@
    align-items: center;
    justify-content: center;
    gap: 2em 1.5em;
-   padding: 3em 1em;
+   padding: 5em 1em;
 }
 
 .repositories .repository-box {
@@ -101,9 +112,17 @@
 .repository-box .project-preview {
    width: 100%;
    height: 200px;
-   background: url(../img/preview-lorem-advocacia-landing-page.png) no-repeat center top;
-   background-size: 120%;
    border-radius: 10px;
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-size: 130%;
+   transition: all .6s;
+   transition-delay: 105ms;
+}
+
+.repository-box .project-preview:hover {
+   background-size: 150%;
+   filter: brightness(80%);
 }
 
 .repository-box .buttons-interact {
@@ -129,3 +148,29 @@
 .buttons-interact .button-view:hover {
    background-color: var(--color-buttons-hover);
 }
+
+#repository-box-1 .project-preview {
+   background-image: url(../img/preview-lorem-advocacia-landing-page.png);
+}
+
+#repository-box-2 .project-preview {
+   background-image: url(../img/preview-agencia23.png);
+}
+
+#repository-box-3 .project-preview {
+   background-image: url(../img/preview-huddle-landing-page-1.png);
+}
+
+#repository-box-4 .project-preview {
+   background-image: url(../img/preview-huddle-landing-page-2.png);
+}
+
+#repository-box-5 .project-preview {
+   background-image: url(../img/preview-fylo-landing-page-1.png);
+}
+
+#repository-box-6 .project-preview {
+   background-image: url(../img/preview-huddle-introdutory.png);
+}
+
+
