@@ -77,7 +77,6 @@
    font-size: 2em;
    text-transform: uppercase;
    font-weight: 600;
-   margin: auto;
 }
 
 .menu-nav-header .menu-trigger i {
@@ -89,6 +88,7 @@
 
 .menu-nav-header ul {
    z-index: 999;
+   width: 200px;
    top: 87px;
    right: 0px;
    position: absolute;
@@ -99,10 +99,6 @@
    transform: rotateX(90deg);
    transform-origin: top;
    transition: ease-in-out .2s;
-}
-
-.menu-nav-header ul li {
-   width: 200px;
 }
 
 .menu-nav-header ul li a {
@@ -117,6 +113,15 @@
 
 .menu-nav-header ul li:last-child a {
    border-radius: 0 0 10px 10px;
+}
+
+.menu-nav-header ul li .github-link-header {
+   display: none;
+   font-size: 1em;
+}
+
+.menu-nav-header ul li .github-link-header i {
+   display: none;
 }
 
 .menu-nav-header ul.open {
@@ -213,4 +218,93 @@
    background-image: url(../img/preview-huddle-introdutory.png);
 }
 
+@media(max-width: 755px) {
+   .menu-nav-header h1 {
+      font-size: 1.7em;
+   }
 
+   .menu-nav-header .github-link-header {
+      display: none;
+   }
+
+   .menu-nav-header ul {
+      top: 80px;
+   }
+
+   .menu-nav-header ul li .github-link-header {
+      display: block;
+   }
+
+   .repositories .repository-box {
+      width: 80%;
+   }
+
+   .repository-box .project-preview {
+      height: 300px;
+   }
+}
+
+@media(max-width: 630px) {
+   .menu-nav-header h1 {
+      font-size: 1.5em;
+   }
+
+   .menu-nav-header ul {
+      width: 100%;
+      align-items: center;
+   }
+   
+   .repositories .repository-box {
+      width: 90%;
+   }
+
+   .repository-box .project-preview {
+      height: 250px;
+   }
+
+   .buttons-interact .button-view {
+      font-size: 1em;
+   }
+}
+
+@media(max-width: 500px) {
+   .menu-nav-header h1 {
+      font-size: 1.3em;
+   }
+
+   .menu-nav-header .menu-trigger i {
+      font-size: 1.8em;
+   }
+
+   .menu-nav-header ul {
+      top: 75px;
+   }
+
+   #container .repositories {
+      padding: 3em 1em;
+   }
+
+   .repositories .repository-box {
+      width: 95%;
+   }
+
+   .repository-box .project-preview {
+      height: 220px;
+   }
+   
+   .buttons-interact .button-view {
+      font-size: .9em;
+   }
+}
+
+@media(max-width: 430px) {
+   .repository-box .project-preview {
+      height: 190px;
+   }
+}
+
+@media(max-width: 350px) {
+   .repository-box .project-preview {
+      height: 160px;
+   }
+}
