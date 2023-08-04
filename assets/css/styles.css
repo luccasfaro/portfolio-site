@@ -84,6 +84,11 @@
    cursor: pointer;
 }
 
+#header-top .menu-nav-header .menu-trigger:hover i,
+#header-top .menu-nav-header .menu-trigger i.menu-open {
+   color: var(--color-buttons-hover);
+}
+
 /* Menu Trigger */
 
 .menu-nav-header ul {
@@ -109,6 +114,10 @@
 
 .menu-nav-header ul li a:hover {
    background-color: var(--color-header-menu-trigger-hover);
+}
+
+.menu-nav-header ul li:nth-child(2) a {
+   border-radius: 0 0 10px 10px;
 }
 
 .menu-nav-header ul li:last-child a {
@@ -235,6 +244,10 @@
       display: block;
    }
 
+   .menu-nav-header ul li:nth-child(2) a {
+      border-radius: 0;
+   }
+
    .repositories .repository-box {
       width: 80%;
    }
@@ -253,6 +266,7 @@
       width: 100%;
       align-items: center;
    }
+   
    
    .repositories .repository-box {
       width: 90%;
