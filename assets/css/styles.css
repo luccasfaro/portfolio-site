@@ -212,11 +212,11 @@
 }
 
 #repository-box-3 .project-preview {
-   background-image: url(../img/preview-huddle-landing-page-1.png);
+   background-image: url(../img/preview-fylo-dark-theme.png);
 }
 
 #repository-box-4 .project-preview {
-   background-image: url(../img/preview-huddle-landing-page-2.png);
+   background-image: url(../img/preview-huddle-introdutory.png);
 }
 
 #repository-box-5 .project-preview {
@@ -224,7 +224,11 @@
 }
 
 #repository-box-6 .project-preview {
-   background-image: url(../img/preview-huddle-introdutory.png);
+   background-image: url(../img/preview-huddle-landing-page-1.png);
+}
+
+#repository-box-7 .project-preview {
+   background-image: url(../img/preview-huddle-landing-page-2.png);
 }
 
 @media(max-width: 755px) {
